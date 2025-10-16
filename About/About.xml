@@ -1,0 +1,14 @@
+<ModMetaData>
+	<packageId>Smxrez.noglovesorboots</packageId>
+	<name>No Gloves Or Boots</name>
+	<author>Smxrez</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>Removes gloves and boots</description>
+	<loadAfter>
+		<li>dankpyon.medieval.overhaul</li>
+		<li>vanillaexpanded.vappe</li>
+		<li>vanillaexpanded.varme</li>
+	</loadAfter>
+</ModMetaData>

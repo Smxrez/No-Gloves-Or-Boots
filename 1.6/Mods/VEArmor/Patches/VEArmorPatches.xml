@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+  		  <li Class="PatchOperationConditional">
+            <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VAE_Footwear_PlateBoots"]</xpath>
+    		<match Class="PatchOperationRemove">
+            <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VAE_Footwear_PlateBoots"]</xpath>
+    		</match>
+  		  </li>
+  		  <li Class="PatchOperationConditional">
+            <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VAE_Footwear_MarineBoots"]</xpath>
+    		<match Class="PatchOperationRemove">
+            <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VAE_Footwear_MarineBoots"]</xpath>
+    		</match>
+  		  </li>
+  		  <li Class="PatchOperationConditional">
+            <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VAE_Handwear_PlateGloves"]</xpath>
+    		<match Class="PatchOperationRemove">
+            <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VAE_Handwear_PlateGloves"]</xpath>
+    		</match>
+  		  </li>
+  		  <li Class="PatchOperationConditional">
+            <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VAE_Handwear_MarineGloves"]</xpath>
+    		<match Class="PatchOperationRemove">
+            <xpath>/Defs/PawnKindDef/apparelRequired/li[text()="VAE_Handwear_MarineGloves"]</xpath>
+    		</match>
+  		  </li>
+        <li Class="PatchOperationAttributeAdd">
+               <xpath>Defs/ThingDef[defName="VAE_Footwear_PlateBoots"]</xpath>
+               <attribute>Abstract</attribute>
+               <value>True</value>
+         </li>
+        <li Class="PatchOperationAttributeAdd">
+               <xpath>Defs/ThingDef[defName="VAE_Footwear_MarineBoots"]</xpath>
+               <attribute>Abstract</attribute>
+               <value>True</value>
+         </li>
+        <li Class="PatchOperationAttributeAdd">
+               <xpath>Defs/ThingDef[defName="VAE_Handwear_PlateGloves"]</xpath>
+               <attribute>Abstract</attribute>
+               <value>True</value>
+         </li>
+        <li Class="PatchOperationAttributeAdd">
+               <xpath>Defs/ThingDef[defName="VAE_Handwear_MarineGloves"]</xpath>
+               <attribute>Abstract</attribute>
+               <value>True</value>
+         </li>
+		</operations>
+	</Operation>
+</Patch>
+
